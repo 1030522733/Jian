@@ -13,5 +13,8 @@ import androidx.lifecycle.AndroidViewModel;
 public abstract class BaseVM extends AndroidViewModel {
     public BaseVM(@NonNull Application application) {
         super(application);
+        initData();
     }
+
+    public abstract void initData();
 }

@@ -41,4 +41,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation project(path: ':jtowers')
+
+    implementation 'com.xm.permissions:XmPermissions:1.1.0'
 }

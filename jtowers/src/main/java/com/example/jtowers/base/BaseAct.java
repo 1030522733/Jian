@@ -83,8 +83,11 @@ public abstract class BaseAct<VM extends BaseVM, VDB extends ViewDataBinding>
             view.setSystemUiVisibility(option);
         }
         ActionBar actionBar = getSupportActionBar();
-        assert actionBar != null;
-        actionBar.hide();
+        if (actionBar != null){
+            actionBar.hide();
+        }
+//        assert actionBar != null;
+//        actionBar.hide();
     }
 
     @Override

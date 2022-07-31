@@ -13,4 +13,9 @@ public class NullVM extends BaseVM{
     public NullVM(@NonNull Application application) {
         super(application);
     }
+
+    @Override
+    public void initData() {
+
+    }
 }
