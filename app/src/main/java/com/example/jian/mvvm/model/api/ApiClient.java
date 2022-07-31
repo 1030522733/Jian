@@ -1,10 +1,6 @@
 package com.example.jian.mvvm.model.api;
 
-import com.example.jian.mvvm.model.bean.UserBean;
-import com.example.jtowers.network.BaseResponse;
 import com.example.jtowers.network.NetworkApi;
-
-import io.reactivex.Observable;
 
 /**
  * @Author: JianTours

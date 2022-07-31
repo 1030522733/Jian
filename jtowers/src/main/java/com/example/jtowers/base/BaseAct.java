@@ -1,6 +1,8 @@
 package com.example.jtowers.base;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -89,5 +91,10 @@ public abstract class BaseAct<VM extends BaseVM, VDB extends ViewDataBinding>
     protected void onDestroy() {
         super.onDestroy();
         EventBus.getDefault().unregister(this);
+    }
+
+    protected void setIntent(Class<Activity> activityClass){
+        Intent intent = new Intent(this,activityClass);
+        startActivity(intent);
     }
 }
